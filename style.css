@@ -78,7 +78,7 @@ a:hover{
 }
 .square:hover{
     cursor: pointer;
-    background-color: #B2BEB5;
+    background-color: #90EE90;
 }
 .square object{
     
@@ -167,5 +167,44 @@ fill: wheat;
 }
 
 .highlight {
-    background-color: yellow;
+    background-color: #90EE90;
   }
+
+
+
+.bulletdown {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: yellow;
+    border-radius: 50%;
+    animation: bulletAnimation 3s linear;
+}
+
+@keyframes bulletAnimation {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(550px);
+    }
+}
+
+.bulletup {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: yellow;
+    border-radius: 50%;
+    animation: bulletAnimationup 2s linear;
+}
+
+@keyframes bulletAnimationup {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-550px);
+    }
+}
+
