@@ -186,7 +186,7 @@ fill: wheat;
         transform: translateY(0);
     }
     to {
-        transform: translateY(550px);
+        transform: translateY(450px);
     }
 }
 
