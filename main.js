@@ -270,7 +270,7 @@ function fireBullet(targetSquare) {
   bullet.style.top = `${rect.top + 100}px`; // Start at the top of the target square
   console.log(bullet.style.top)
 
-  // Remove the bullet after the animation completes
+ 
   bullet.addEventListener('animationend', () => {
       bullet.remove();
   });
@@ -288,6 +288,6 @@ function fireBullet(targetSquare) {
 }
 
 function Bullet() {
-  var bulletSound = new Audio("laser.mp3"); // Adjust the path to your bullet sound file
+  var bulletSound = new Audio("laser.mp3"); 
   bulletSound.play();
 }
